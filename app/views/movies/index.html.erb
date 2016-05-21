@@ -1,1 +1,7 @@
-<h1>Index</h1>
+<% @movies.each do |movie| %>
+
+	<h2><%= movie.title %></h2>
+
+<% end %>
+
+<%= link_to "Dodaj film", new_movie_path %>
