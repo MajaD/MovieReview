@@ -1,6 +1,6 @@
 <% @movies.each do |movie| %>
 
-	<h2><%= movie.title %></h2>
+	<h2><%= link_to movie.title, movie_path(movie) %></h2>
 
 <% end %>
 
