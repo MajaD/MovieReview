@@ -3,5 +3,10 @@
 <p><%= @movie.description %></p>
 
 <%= link_to "Powrót", root_path %>
-<%= link_to "Edytu", edit_movie_path(@movie) %>
-<%= link_to "Usuń", movie_path(@movie), method: :delete, data: { confirm: "Jesteś pewny, że chcesz usunąć film?"} %>
+
+<% if user_signed_in? %>
+    <% if @movie.user_id == current_user.id %>
+        <%= link_to "Edytu", edit_movie_path(@movie) %>
+        <%= link_to "Usuń", movie_path(@movie), method: :delete, data: { confirm: "Jesteś pewny, że chcesz usunąć film?"} %>
+    <% end %>
+<% end %>

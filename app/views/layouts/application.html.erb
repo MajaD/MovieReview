@@ -15,14 +15,19 @@
           <%= link_to "Movie Review", root_path, class: "navbar-brand" %>
         </div>
         
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Rejestracja", new_user_registration_path %></li>
           <% if user_signed_in? %>
             <li><%= link_to "Wyloguj",  destroy_user_session_path, method: :delete %></li>
           <% else %>
             <li><%= link_to "Zaloguj",  new_user_session_path %></li>
           <% end %>
-          
+        </ul>
+        
+        <ul class="nav navbar-nav">
+          <% if user_signed_in? %>
+            <li><%= link_to "Dodaj film", new_movie_path %></li>
+          <% end %>
         </ul>
       </div>
     </nav>
