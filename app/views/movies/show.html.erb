@@ -1,8 +1,21 @@
-<h2><%= @movie.title %></h2>
-<h3><%= @movie.director %></h3>
-<h4><%= @movie.category.name %></h4>
-<p><%= @movie.description %></p>
+<div class="row">
+    <div class="col-md-4">
+        <%= image_tag @movie.movie_poster.url(:movie_show), class: "movie-show" %>
+    </div>
+    
+    <div class="col-md-8">
+        <h2><%= @movie.title %></h2>
+        <h3><%= @movie.director %></h3>
+        <h4><%= @movie.category.name %></h4>
+        <p><%= @movie.description %></p>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-md-4">
+        
+    </div>
+</div>
 <%= link_to "Powrót", root_path %>
 
 <% if user_signed_in? %>

@@ -1,5 +1,6 @@
 <%= simple_form_for @movie do |f| %>
 	<%= select_tag(:category_id, options_for_select(@categories), :prompt => "Wybierz kategorie") %>
+	<%= f.file_field :movie_poster %>
 	<%= f.input :title , label: "Tytuł" %>
 	<%= f.input :director, label: "Reżyser" %>
 	<%= f.input :description, label: "Opis" %>
