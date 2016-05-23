@@ -4,16 +4,13 @@
     </div>
     
     <div class="col-md-8">
+        
         <h2><%= @movie.title %></h2>
-        
+        <span><%= @movie.category.name %></span>
         <h3><%= @movie.director %></h3>
-        
-        
-        <h4><%= @movie.category.name %></h4>
-        
         <h2>Średnia ocen</h2>
         <div class="average-review-rating" data-score=<%= @average_review %>></div>
-        
+        <span>Liczba ocen <%= @movie.reviews.count %></span>
         <div style="height:25px"></div>
         
         <p><%= @movie.description %></p>
