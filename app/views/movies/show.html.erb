@@ -31,12 +31,13 @@
     <% end %>
 <% end %>
 
-//<scritp src="jquery.raty.js">
-//    $('.review-rating').raty({
-//    readOnly: true,
-//    score: function() {
-//        return $(this).attr('data-score');
-//    },
-//    path: '/assets/'
-//    });
-//</scritp>
+
+<script>
+    $('.review-rating').raty({    
+    readOnly: true,
+    score: function() {
+        return $(this).attr('data-score');
+    },
+    path: '/assets/'
+    });
+</script>
