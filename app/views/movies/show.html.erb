@@ -14,6 +14,8 @@
 <div class="row">
     <div class="col-md-4">
         
+        <%= render @movie.reviews %>
+        
         <div>
             <%= link_to "Dodaj Recenzje", new_movie_review_path(@movie) %>
         </div>
