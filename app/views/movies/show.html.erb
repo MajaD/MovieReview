@@ -14,13 +14,17 @@
 <div class="row">
     <div class="col-md-4">
         
+        <div>
+            <%= link_to "Dodaj Recenzje", new_movie_review_path(@movie) %>
+        </div>
+        
     </div>
 </div>
 <%= link_to "Powrót", root_path %>
 
 <% if user_signed_in? %>
     <% if @movie.user_id == current_user.id %>
-        <%= link_to "Edytu", edit_movie_path(@movie) %>
+        <%= link_to "Edytuj", edit_movie_path(@movie) %>
         <%= link_to "Usuń", movie_path(@movie), method: :delete, data: { confirm: "Jesteś pewny, że chcesz usunąć film?"} %>
     <% end %>
 <% end %>
