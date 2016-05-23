@@ -1,9 +1,19 @@
-<h1>Edycja Recenzji</h1>
+<h1>Edycja recenzji</h1>
 
 <%= simple_form_for([@movie, @review]) do |f| %>
 
-<%= f.input :rating, label: "Ocena" %>
+  <div id="rating-form">
+        <label>Ocena</label>
+    </div>
+    
 <%= f.input :comment, label: "Komentarz" %>
 <%= f.button :submit %>
 
 <% end %>
+
+<script>
+    $('#rating-form').raty({
+        path: '/assets/',
+        scoreName: 'review[rating]'
+    });
+</script>
