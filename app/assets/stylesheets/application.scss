@@ -161,6 +161,10 @@ p.alert, p.notice {
 		font-size: 0.85em;
 		font-style: italic;
 	}
+	
+	.movie-category{
+		font-size: 0.85em;
+	}
 
 	.movie-director {
 		font-size: 1.5em;
@@ -172,10 +176,10 @@ p.alert, p.notice {
 	}
 
 	.movie-desc {
-		font-size: 1.05em;
+		font-size: 1.15em;
 		line-height: 1.5;
-		margin-bottom: 15px;
-		margin-top: 15px;
+		margin-bottom: 25px;
+		margin-top: 25px;
 	}
 
 }

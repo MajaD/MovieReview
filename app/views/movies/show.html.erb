@@ -5,15 +5,19 @@
     
     <div class="col-md-8">
         
-        <h2><%= @movie.title %></h2>
-        <h3><%= @movie.director %></h3>
-        <span><%= @movie.category.name %></span>
-        <h3>Średnia ocen</h3>
-        <div class="average-review-rating" data-score=<%= @average_review %>></div>
-        <span>Liczba ocen <%= @movie.reviews.count %></span>
-        <div style="height:25px"></div>
+        <div class="movie-info">
+            <h2 class="movie-title"><%= @movie.title %></h2>
+            <h3 class="movie-director"><%= @movie.director %></h3>
+            <span class="movie-category"><%= @movie.category.name %></span>
+            <h3 class="avg-rating">Średnia ocen</h3>
+            <div class="average-review-rating" data-score=<%= @average_review %>></div>
+            <span class="number-of-reviews">Liczba ocen <%= @movie.reviews.count %></span>
+           
+            
         
-        <p><%= @movie.description %></p>
+            <p class="movie-desc"><%= @movie.description %></p>
+        
+        </div>
     </div>
 </div>
 
