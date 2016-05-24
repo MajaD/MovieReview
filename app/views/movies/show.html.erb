@@ -24,12 +24,15 @@
 <div class="row">
     <div class="col-md-4">
         
-        <%= render @movie.reviews %>
-        
-        <div>
-            <%= link_to "Dodaj Recenzje", new_movie_review_path(@movie) %>
+        <div class="reviews">
+            <h1>Komentarze</h1>
+            
+            <%= render @movie.reviews %>
+            
+            <div>
+                <%= link_to "Dodaj Komentarz", new_movie_review_path(@movie) %>
+            </div>
         </div>
-        
     </div>
 </div>
 <%= link_to "Powrót", root_path %>
