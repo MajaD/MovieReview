@@ -31,7 +31,8 @@ gem 'jbuilder', '~> 2.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-
+gem 'will_paginate', '~> 3.1'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'masonry-rails', '~> 0.2.4'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
