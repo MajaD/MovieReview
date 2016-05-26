@@ -17,7 +17,7 @@
   </div>
   </div>
   
-   <div class="center">
-     <%= will_paginate @movies, previous_label: "Nowsze", next_label: "Starsze", renderer: BootstrapPagination::Rails  %>
+   <div class="movie-pagination">
+     <%= will_paginate @movies, previous_label: "<", next_label: ">"%>
    </div>
 <% end %>
