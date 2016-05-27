@@ -1,6 +1,6 @@
 # YBT - MovieReview
 
-Projekt zostanie zrobiony do 27.05.2016
+Projekt tworzony w ramach przedmiotu Architektura serwisów internetowych.
 
 ###Egzamin:
  - [x] [MovieReview](https://github.com/MajaD/MovieReview)
