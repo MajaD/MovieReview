@@ -16,7 +16,7 @@ class MoviesController < ApplicationController
 	def show
 		if @movie.reviews.blank?
 			@average_review = 0
-		else
+			else
 			@average_review = @movie.reviews.average(:rating).round(2)
 		end
 	end 
